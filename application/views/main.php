@@ -63,58 +63,58 @@
 								//$rec = 0;
 								//$jml_rec;
 
-								// echo '<div class="row">';
+								echo '<div class="row">';
 
-								// foreach ($hasil as $value) {
-								// 	echo '<div class="col-md-3">';
-								// 	echo '<div class="panel panel-default">';
+								foreach ($hasil as $value) {
+									echo '<div class="col-md-3">';
+									echo '<div class="panel panel-default">';
 									
-								// 	echo '<div class="panel-body">';
-								// 	$gambar = $value["gambar"];
-								// 	echo '<img src=' . base_url("assets/img/buku/$gambar") . ' class="img-responsive" alt="sampul_buku">';
-								// 	echo '</div>';
+									echo '<div class="panel-body">';
+									$gambar = $value["gambar"];
+									echo '<img src=' . base_url("assets/img/buku/$gambar") . ' class="img-responsive" alt="sampul_buku">';
+									echo '</div>';
 
-								// 	echo '<div class="panel-footer">';
-								// 	echo '<div class="row">';
-								// 	echo '<div class="col-md-12">';
-								// 	echo $value["judul"];
-								// 	echo '</div>';
-								// 	echo '</div>';
-								// 	echo '<div class="row">';
-								// 	echo '<div class="col-md-9">';
-								// 	echo $value["harga"];
-								// 	echo '</div>';
-								// 	echo '<div class="col-md-3">';
-								// 	echo $value["hal"];
-								// 	echo '</div>';
-								// 	echo '</div>';
+									echo '<div class="panel-footer">';
+									echo '<div class="row">';
+									echo '<div class="col-md-12">';
+									echo $value["judul"];
+									echo '</div>';
+									echo '</div>';
+									echo '<div class="row">';
+									echo '<div class="col-md-9">';
+									echo $value["harga"];
+									echo '</div>';
+									echo '<div class="col-md-3">';
+									echo $value["hal"];
+									echo '</div>';
+									echo '</div>';
 
-								// 	echo '<div class="row">';
-								// 	echo '<div class="col-md-12">';
-								// 	echo '<div class="btn-group btn-group-justified" role="group" aria-label="...">';
-								// 	echo '<div class="btn-group" role="group">';
-								// 	echo '<button value="'. $value["id_buku"] .'" type="button" class="btn btn-default" data-toggle="modal" data-target="#modal-book-detail">Detail</button>';
-								// 	echo '</div>';
-								// 	echo '<div class="btn-group" role="group">';
-								// 	echo '<button value="' . $value["id_buku"] .'" type="button" class="btn btn-default">Beli</button>';
-								// 	echo '</div>';
-								// 	echo '<div class="btn-group" role="group">';
-								// 	echo '<button value="' . $value["id_buku"] . '" type="button" class="btn btn-default">Wish</button>';
-								// 	echo '</div>';
-								// 	echo '</div>';
-								// 	echo '</div>';
-								// 	echo '</div>';
+									echo '<div class="row">';
+									echo '<div class="col-md-12">';
+									echo '<div class="btn-group btn-group-justified" role="group" aria-label="...">';
+									echo '<div class="btn-group" role="group">';
+									echo '<button value="'. $value["id_buku"] .'" type="button" class="btn btn-default" data-toggle="modal" data-target="#modal-book-detail">Detail</button>';
+									echo '</div>';
+									echo '<div class="btn-group" role="group">';
+									echo '<button value="' . $value["id_buku"] .'" type="button" class="btn btn-default">Beli</button>';
+									echo '</div>';
+									echo '<div class="btn-group" role="group">';
+									echo '<button value="' . $value["id_buku"] . '" type="button" class="btn btn-default">Wish</button>';
+									echo '</div>';
+									echo '</div>';
+									echo '</div>';
+									echo '</div>';
 
-								// 	echo '</div>';
+									echo '</div>';
 
-								// 	echo '</div>';
-								// 	echo '</div>';
-								// }
+									echo '</div>';
+									echo '</div>';
+								}
 
-								// echo '</div>';
+								echo '</div>';
 
 								?>
-
+<!--
 								<div class="row">
 									<div class="col-md-3">
 										<div class="panel panel-default">
@@ -137,13 +137,6 @@
 												</div>
 												<div class="row">
 													<div class="col-md-12">
-<!--
-														<form class="form-inline">
-															<button type="submit" class="btn btn-default" data-toggle="modal" data-target="#modal-book-detail">Detail</button>
-															<button type="submit" class="btn btn-default">Beli</button>
-															<button type="submit" class="btn btn-default">Wish</button>
-														</form>
--->
 														<div class="btn-group btn-group-justified" role="group" aria-label="...">
 															<div class="btn-group" role="group">
 																<button id="btn-detail" value="1" type="button" class="btn btn-default" data-toggle="modal" data-target="#modal-book-detail">Detail</button>
@@ -364,7 +357,7 @@
 										</div>
 									</div>
 								</div>
-
+-->
 							</div>
 						</div> <!-- end Etalase -->
 
