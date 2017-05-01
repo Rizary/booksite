@@ -6,16 +6,36 @@
 			                    <!-- <li class="active"><a href="javascript:;">Home</a></li> -->
 			                    <li><a role="button" data-toggle="collapse" href="#katalog-list" aria-expanded="false" aria-controls="katalog-list">Katalog</a></li>
 			                    <div class="collapse" id="katalog-list">
+			                    <!--
 			                    	<li><a role="button">Komik</a></li>
 			                    	<li><a role="button">Pelajaran</a></li>
 			                    	<li><a role="button">Lain-lain</a></li>
+			                    -->
+
+			                    	<?php
+			                    	foreach ($katalog as $value) {
+			                    		echo "<li>";
+			                    		echo "<a id='" . $value["id"] . "' role='button'>" . $value["katalog"] . "</a>";
+			                    		echo "</li>";
+			                    	}
+			                    	?>
 			                    </div>
 			                    <li class="nav-divider"></li>
 			                    <li><a  role="button" data-toggle="collapse" href="#kategori-list" aria-expanded="false" aria-controls="kategori-list">Kategori</a></li>
 			                    <div class="collapse list-group" id="kategori-list">
+			                    <!--
 			                    	<li><a role="button">Dewasa</a></li>
 			                    	<li><a role="button">Anak</a></li>
 			                    	<li><a role="button">Lain-lain</a></li>
+			                    -->
+
+			                    	<?php
+			                    	foreach ($kategori as $value) {
+			                    		echo "<li>";
+			                    		echo "<a id='" . $value["id"] . "' role='button'>" . $value["kategori"] . "</a>";
+			                    		echo "</li>";
+			                    	}
+			                    	?>
 			                    </div>
 			                </ul>
 			            </nav>
@@ -38,6 +58,63 @@
 						<!-- Etalase -->
 						<div id="etalase" class="row">
 							<div class="col-md-12">
+
+								<?php
+								//$rec = 0;
+								//$jml_rec;
+
+								// echo '<div class="row">';
+
+								// foreach ($hasil as $value) {
+								// 	echo '<div class="col-md-3">';
+								// 	echo '<div class="panel panel-default">';
+									
+								// 	echo '<div class="panel-body">';
+								// 	$gambar = $value["gambar"];
+								// 	echo '<img src=' . base_url("assets/img/buku/$gambar") . ' class="img-responsive" alt="sampul_buku">';
+								// 	echo '</div>';
+
+								// 	echo '<div class="panel-footer">';
+								// 	echo '<div class="row">';
+								// 	echo '<div class="col-md-12">';
+								// 	echo $value["judul"];
+								// 	echo '</div>';
+								// 	echo '</div>';
+								// 	echo '<div class="row">';
+								// 	echo '<div class="col-md-9">';
+								// 	echo $value["harga"];
+								// 	echo '</div>';
+								// 	echo '<div class="col-md-3">';
+								// 	echo $value["hal"];
+								// 	echo '</div>';
+								// 	echo '</div>';
+
+								// 	echo '<div class="row">';
+								// 	echo '<div class="col-md-12">';
+								// 	echo '<div class="btn-group btn-group-justified" role="group" aria-label="...">';
+								// 	echo '<div class="btn-group" role="group">';
+								// 	echo '<button value="'. $value["id_buku"] .'" type="button" class="btn btn-default" data-toggle="modal" data-target="#modal-book-detail">Detail</button>';
+								// 	echo '</div>';
+								// 	echo '<div class="btn-group" role="group">';
+								// 	echo '<button value="' . $value["id_buku"] .'" type="button" class="btn btn-default">Beli</button>';
+								// 	echo '</div>';
+								// 	echo '<div class="btn-group" role="group">';
+								// 	echo '<button value="' . $value["id_buku"] . '" type="button" class="btn btn-default">Wish</button>';
+								// 	echo '</div>';
+								// 	echo '</div>';
+								// 	echo '</div>';
+								// 	echo '</div>';
+
+								// 	echo '</div>';
+
+								// 	echo '</div>';
+								// 	echo '</div>';
+								// }
+
+								// echo '</div>';
+
+								?>
+
 								<div class="row">
 									<div class="col-md-3">
 										<div class="panel panel-default">
@@ -60,17 +137,25 @@
 												</div>
 												<div class="row">
 													<div class="col-md-12">
+<!--
+														<form class="form-inline">
+															<button type="submit" class="btn btn-default" data-toggle="modal" data-target="#modal-book-detail">Detail</button>
+															<button type="submit" class="btn btn-default">Beli</button>
+															<button type="submit" class="btn btn-default">Wish</button>
+														</form>
+-->
 														<div class="btn-group btn-group-justified" role="group" aria-label="...">
 															<div class="btn-group" role="group">
-																<button type="button" class="btn btn-default" data-toggle="modal" data-target="#modal-book-detail">Detail</button>
+																<button id="btn-detail" value="1" type="button" class="btn btn-default" data-toggle="modal" data-target="#modal-book-detail">Detail</button>
 															</div>
 															<div class="btn-group" role="group">
-																<button type="button" class="btn btn-default">Beli</button>
+																<button id="btn-beli" value="1" type="button" class="btn btn-default">Beli</button>
 															</div>
 															<div class="btn-group" role="group">
-																<button type="button" class="btn btn-default">Wish</button>
+																<button id="btn-wish" value="1" type="button" class="btn btn-default">Wish</button>
 															</div>
 														</div>
+
 													</div>
 												</div>
 											</div>

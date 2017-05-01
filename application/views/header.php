@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 	<head>
-		<title>BookSite.com</title>
+		<title><?= $title; ?></title>
 		<link rel="stylesheet" type="text/css" href="<?= base_url('assets/css/bootstrap.min.css'); ?>">
 		<link rel="stylesheet" type="text/css" href="<?= base_url('assets/css/booksite.css'); ?>">
 	</head>

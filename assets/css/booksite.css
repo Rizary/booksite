@@ -47,6 +47,11 @@ header {
 
 
 /*MAIN*/
+.btn-action > li > a {
+  position: relative;
+  display: block;
+  padding: 10px 15px;
+}
 
 /*FOOTER*/
 footer {
